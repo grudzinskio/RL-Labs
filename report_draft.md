@@ -78,7 +78,7 @@ Points to hit:
 
 ## Q4. How does the Contextual_Bandit_generator class work?
 
-Docstrings and comments are in the notebook and in `cb_lab.py`. For the report, describe:
+Docstrings and comments are in the notebook, in Section 2. For the report, describe:
 
 - `__init__` calls `make_classification` **once** to build a fixed pool of 100,000 synthetic users.
   Each user is a 5-feature vector paired with a hidden label giving which of five articles they want.
