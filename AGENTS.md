@@ -39,12 +39,14 @@ material ways. Watch for it.
   copy it exactly. Never recreate or "clean up" it, that introduces differences from what the
   professor intended.
 - **Do exactly what the assignment asks, nothing more.** No multiple seeds, extra sweeps, error bars,
-  caching, or parallelism unless the lab asks for it. It just makes runs longer for no gain.
+  resume/skip logic, or parallelism unless the lab asks for it. It just makes runs longer for no gain.
 - If you think something extra is worth adding, ask me first instead of adding it.
 - Shortest thing that correctly does what the assignment asks. No extra features, config systems,
   abstraction layers, or defensive checks for cases that can't happen.
-- One notebook per lab, self contained (submission only takes .pdf, .ipynb, .html so no helper .py
-  files).
+- Everything goes in one Jupyter notebook per lab, for now. Self contained, no helper .py files
+  (submission only takes .pdf, .ipynb, .html).
+- Always save experiment results. Write the numbers to CSV in `results/` and every plot to PNG in
+  `figures/` inside the lab folder, so they can be looked at without rerunning the notebook.
 - Plain numpy / matplotlib / gymnasium. Don't pull in a library for something a few lines can do.
 - Comments only where something isn't obvious. No docstrings on every function.
 - Short variable names are fine if they match the assignment's notation.
@@ -59,7 +61,8 @@ Keep it short and make it sound like a college student wrote it, not a chatbot.
 - No filler openers or closers ("Great question", "In summary", "It's worth noting", "Let's dive in").
 - No buzzwords: delve, leverage, robust, seamless, crucial, comprehensive, utilize, showcase, pivotal,
   intricate, landscape, realm, tapestry, underscore, furthermore, moreover.
-- Don't overuse em dashes, bold, or bullet lists. A short paragraph is often better than five bullets.
+- No em dashes, ever. Use a comma, period, or parentheses instead.
+- Don't overuse bold or bullet lists. A short paragraph is often better than five bullets.
 - Don't hedge everything. State what the data shows.
 - No emojis.
 
