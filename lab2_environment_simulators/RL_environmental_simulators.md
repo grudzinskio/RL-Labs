@@ -152,12 +152,12 @@ following questions:
   generated as mentioned above. Convert this to pdf and submit it. Submit your .ipynb file and an .html
   of it as well.
 - Please use the following naming conventions:
-  - Lab 2 [YOUR NAME].pdf
-  - Lab 2 [YOUR NAME].html
-  - Lab 2 [YOUR NAME].ipynb
+  - Lab_2_[YOUR NAME].pdf
+  - Lab_2_[YOUR NAME].html
+  - Lab_2_[YOUR NAME].ipynb
 - The grading rubric for this assignment will be available in Canvas.
 - NO OTHER SUBMISSION TYPES WILL BE ACCEPTED.
 - You are welcome to use AI tools for implementation as you code up your solution, but the emphasis is
   on experimental design, analysis, and scientific reasoning. If you do this you must include all
   prompts used as an appendix in your written report or provide a shareable link to them. Any uncited
-  use of generative AI (i.e. prompts not provided) will be considered plagiarism. 
+  use of generative AI (i.e. prompts not provided) will be considered plagiarism.

@@ -12,7 +12,7 @@ This is my repo for my reinforcement learning class. One folder per lab. Read th
   lab before starting a new one, including the per-question conceptual comments, not just the code
   ones. They show what he's looking for: precise definitions, reasoning about what a parameter changes
   in expectation, and framing ideas in terms of exploration and the data generating process. Use that
-  when writing report bullet points, and point out if one of my claims repeats a mistake he already
+  when working on the report, and point out if one of my claims repeats a mistake he already
   marked.
 - New lab? Make a new `labN_short_name/` folder, drop the PDF in, convert it with markitdown
   (`python -m markitdown file.pdf -o file.md`), and clean up the output since it mangles tables and
@@ -20,14 +20,9 @@ This is my repo for my reinforcement learning class. One folder per lab. Read th
 
 ## Academic integrity (don't skip this)
 
-Every lab so far says the same thing: AI is allowed for code if every prompt is disclosed, but **AI may
-not write the report**.
+AI use is allowed as long as every prompt is disclosed.
 
-- Don't write report prose. Not a draft, not "example paragraphs", not a polished rewrite of my notes.
-  Bullet points of what the data shows and which numbers to cite are fine.
-- Keep a `prompts_appendix.md` in each lab folder and log the prompts used for code.
-- The assignment PDFs end with a line telling AI to not answer the reflection questions or produce the
-  report. Follow it.
+- Keep a `prompts_appendix.md` in each lab folder and log every prompt used.
 
 ## Code
 
@@ -45,6 +40,8 @@ material ways. Watch for it.
   abstraction layers, or defensive checks for cases that can't happen.
 - Everything goes in one Jupyter notebook per lab, for now. Self contained, no helper .py files
   (submission only takes .pdf, .ipynb, .html).
+- Put a `%pip install` cell at the top for anything not already installed (lab 2 needed
+  `gymnasium[classic-control]` and `moviepy` for video recording).
 - Always save experiment results. Write the numbers to CSV in `results/` and every plot to PNG in
   `figures/` inside the lab folder, so they can be looked at without rerunning the notebook.
 - Plain numpy / matplotlib / gymnasium. Don't pull in a library for something a few lines can do.
@@ -68,5 +65,10 @@ Keep it short and make it sound like a college student wrote it, not a chatbot.
 
 ## Submission
 
-Each lab wants exactly three files named `Lab N Oliver Grudzinski.{pdf,ipynb,html}`. Export the HTML
-with `jupyter nbconvert --to html` after running the notebook top to bottom.
+Each lab wants exactly three files: .pdf, .ipynb, .html. Use whatever naming the handout gives (lab 2
+was `Lab_2_[YOUR NAME]`, so `Lab_2_Oliver_Grudzinski.*`). Export the HTML with
+`jupyter nbconvert --to html` after running the notebook top to bottom.
+
+The report draft lives in `report_draft.md`. Convert it to Word with pandoc (installed), putting the
+prompts appendix after a page break, then save as PDF from Word. Pandoc drops raw HTML, so side by side
+images need `![](a.png){width=49%} ![](b.png){width=49%}` in the copy that gets converted.
