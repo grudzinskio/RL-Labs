@@ -1,0 +1,10 @@
+method,case,episodes,total steps,length first 100,length last 100,success first 100,success last 100,greedy length,greedy success
+MC,no exploration,3000,3000000,1000.0,1000.0,0.0,0.0,1000.0,0.0
+MC,+1 per turn reward,3000,2969638,968.14,981.98,0.05,0.03,1000.0,0.0
+SARSA,no exploration,3000,3000000,1000.0,1000.0,0.0,0.0,1000.0,0.0
+SARSA,+1 per turn reward,3000,2992979,981.88,1000.0,0.04,0.0,1000.0,0.0
+Expected SARSA,no exploration,3000,3000000,1000.0,1000.0,0.0,0.0,1000.0,0.0
+Expected SARSA,+1 per turn reward,3000,2989834,972.25,1000.0,0.04,0.0,1000.0,0.0
+MC,no exploration + Q0 = 20,3000,169260,292.3,46.7,0.82,1.0,48.57,1.0
+SARSA,no exploration + Q0 = 20,3000,693130,756.09,105.63,0.44,1.0,109.43,1.0
+Expected SARSA,no exploration + Q0 = 20,3000,693130,756.09,105.63,0.44,1.0,99.25,1.0
