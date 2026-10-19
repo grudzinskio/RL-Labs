@@ -13,3 +13,10 @@ Tool: Claude (Anthropic) through Claude Code.
 **2.**
 
 > remove that from agents.md ai can write
+
+**3.**
+
+> include this rubric too
+>
+> *(followed by the Canvas "Monte Carlo Rubric" pasted as text, now copied into
+> `RL_Classical_Algorithms.md` under "Grading Rubric")*

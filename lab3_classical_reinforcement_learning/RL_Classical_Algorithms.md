@@ -146,3 +146,21 @@ following questions:
 - You are welcome to use AI tools for implementation as you code up your solution, but the emphasis is
   on experimental design, analysis, and scientific reasoning. If you do this you must include all
   prompts used as an appendix in your written report or provide a shareable link to them. 
+
+## Grading Rubric (from Canvas)
+
+Titled "Monte Carlo Rubric" on Canvas. Some criteria have a "view longer description" link that wasn't
+copied, so only the short text is here.
+
+| Criteria | Points |
+| --- | --- |
+| Racetrack environment is appropriately modified | 5 |
+| Simulated 100 races with randomly generated actions | 5 |
+| Agent classes executing 1) On-policy, first visit Monte Carlo Control with ε-soft policies and 2) SARSA | 30 |
+| Q1: Describe how you rewarded the agent and how you conceptualized the state. | 10 |
+| Q2: How many turns does it take on average for the agent to cross the finish line with random actions? How often did the agent cross the finish line with the unmodified racetrack? How will the modification we made to the racetrack interact with the reward function to enhance or impede the agent's ability to learn? | 10 |
+| Q3: For each of the two algorithms how many episodes did you train your agent for? How many turns does each episode take as training progresses? Why do you think there might be a relationship between training time and episode length? Provide an visualization that shows relationship between episode and episode length for the two algorithms. Which one is more sample efficient? | 15 |
+| Q4: What does the learned policy of the agent look like? Specifically, create and provide a visualization of what the agent chooses to do at each location of the track. | 10 |
+| Q5: How do the initial Q-values compare to the learned Q-values for the two algorithms? | 5 |
+| Q6: What effect (if any) do γ and ε have on the performance of the racetrack agent? | 10 |
+| **Total** | **100** |
