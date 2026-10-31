@@ -69,6 +69,10 @@ Each lab wants exactly three files: .pdf, .ipynb, .html. Use whatever naming the
 was `Lab_2_[YOUR NAME]`, so `Lab_2_Oliver_Grudzinski.*`). Export the HTML with
 `jupyter nbconvert --to html` after running the notebook top to bottom.
 
+The final submitted PDF gets saved in the lab folder too. Lab 2 got a really good grade, so use
+`lab2_environment_simulators/Lab2_Oliver_Grudzinski.pdf` as the model for future reports (structure,
+length, tone, how figures are used).
+
 The report draft lives in `report_draft.md`. Convert it to Word with pandoc (installed), putting the
 prompts appendix after a page break, then save as PDF from Word. Pandoc drops raw HTML, so side by side
 images need `![](a.png){width=49%} ![](b.png){width=49%}` in the copy that gets converted.
