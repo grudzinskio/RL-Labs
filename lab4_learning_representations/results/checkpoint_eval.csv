@@ -1,0 +1,13 @@
+agent,episode,greedy turns
+agent1_raw,500,33.132
+agent1_raw,5000,33.044
+agent1_raw,10000,33.222
+agent1_raw,20000,33.068
+agent2_features,500,23.086
+agent2_features,5000,23.402
+agent2_features,10000,22.978
+agent2_features,20000,24.908
+dqn,500,23.882
+dqn,5000,22.876
+dqn,10000,23.164
+dqn,20000,23.53
