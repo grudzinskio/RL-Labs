@@ -219,3 +219,6 @@ __marimo__/
 
 # Lab 4 saved agents (raw-grid Q table pickle is big)
 lab4_learning_representations/models/
+
+# Lab 5 saved A2C networks (~7 MB each)
+lab5/models/
