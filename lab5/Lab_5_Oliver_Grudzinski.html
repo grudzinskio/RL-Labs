@@ -7564,9 +7564,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Setup">Setup<a class="anchor-link" href="#Setup">¶</a></h2><p>The next four cells are copied from <code>A2C_Gym_Space_Invaders_starter.ipynb</code>. The only change is
-<code>terminal_on_life_loss=False</code> in <code>make_env</code>, which is what the handout's version (Figure 2) uses. The starter's
-<code>reward_processing</code> is left in but never called, since the handout says to use the default reward.</p>
+<h2 id="Setup">Setup<a class="anchor-link" href="#Setup">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7917,7 +7915,7 @@ info: {'lives': 3, 'episode_frame_number': 22, 'frame_number': 22, 'seeds': (np.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="A2C-agent-(section-3)">A2C agent (section 3)<a class="anchor-link" href="#A2C-agent-(section-3)">¶</a></h2><p>This fills in the TODOs of the starter <code>Agent</code>. The history helpers are unchanged. During an episode <code>act</code>
+<h2 id="A2C-agent-(section-3)">A2C agent (section 3)<a class="anchor-link" href="#A2C-agent-(section-3)">¶</a></h2><p>During an episode <code>act</code>
 samples from the actor and keeps log π(a|h), V(h) and the policy entropy with their graphs. After the episode,
 <code>make_objectives_A2C</code> computes the discounted return G_t for every step, the advantage A_t = G_t - V(h_t)
 (detached), and</p>
@@ -8088,8 +8086,7 @@ version updates after every episode.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Training-loop">Training loop<a class="anchor-link" href="#Training-loop">¶</a></h3><p>The starter's loop with the TODOs filled in, wrapped in a function so the experiments can reuse it. It trains
-until <code>n_frames</code> frames have been played and logs each episode.</p>
+<h3 id="Training-loop">Training loop<a class="anchor-link" href="#Training-loop">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8188,7 +8185,7 @@ until <code>n_frames</code> frames have been played and logs each episode.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Picking-%CE%B1-and-%CE%B3">Picking α and γ<a class="anchor-link" href="#Picking-%CE%B1-and-%CE%B3">¶</a></h3><p>A full run takes about 40 minutes on my laptop, so I tuned on shorter runs of <code>TUNE_FRAMES</code> frames. Every
+<h3 id="Picking-%CE%B1-and-%CE%B3">Picking α and γ<a class="anchor-link" href="#Picking-%CE%B1-and-%CE%B3">¶</a></h3><p>I tuned on shorter runs of <code>TUNE_FRAMES</code> frames. Every
 combination of α in {1e-4, 3e-4} and γ in {0.9, 0.99} gets one short run with β = 0.1, and the main agent uses
 whichever had the highest average training return over its last 100 episodes. β gets its own experiment below.</p>
 <p>I picked β = 0.1 from three 1M-frame pilot runs (γ = 0.99) I did before writing this notebook. With β = 0.5 and
